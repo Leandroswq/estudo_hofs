@@ -1,4 +1,4 @@
-const data = [4,5,2,8,4,6,9,7,5,3,1,5]
+const data = [4,5,2,8,4,6,9,7,5,3,2,5]
 
 function meuSome(calback){
     const array = [...this]
@@ -8,6 +8,7 @@ function meuSome(calback){
     for (let ind = 0; ind < array.length; ind++) {
         const element = array[ind];
         let aux = calback(element, ind, array)
+        console.log(ind);
         if(aux === true){
             result = true
             break

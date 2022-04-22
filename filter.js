@@ -7,8 +7,8 @@ function meuFilter(calback){
 
     for (let ind = 0; ind < array.length; ind++) {
         const element = array[ind];
-        let aux = calback(element, ind, array)
-        if(aux === true){
+        let retorno = calback(element, ind, array)
+        if(retorno === true){
             result.push(element)
         }
     }
